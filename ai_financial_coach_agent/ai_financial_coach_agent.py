@@ -87,7 +87,7 @@ class DebtReduction(BaseModel):
     recommendations: Optional[List[DebtRecommendation]] = Field(None, description="Recommendations for debt reduction")
 
 load_dotenv()
-GEMINI_API_KEY = os.getenv("AIzaSyBk5PMrFL5wSRpRo7u8D8QIdS0S46-dT78")
+GEMINI_API_KEY = os.getenv("Your API KEY")
 
 def parse_json_safely(data: str, default_value: Any = None) -> Any:
     
